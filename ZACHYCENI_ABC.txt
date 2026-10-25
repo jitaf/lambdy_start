@@ -1,0 +1,12 @@
+Kazdy fragment posuzuj samostatne. Kod nejprve jen cti.
+
+// A
+int x = 1;
+Runnable a = () -> System.out.println(x);
+// B
+int y = 1;
+Runnable b = () -> System.out.println(y);
+y++;
+// C
+List<String> list = new ArrayList<>();
+Runnable c = () -> list.add("A");
